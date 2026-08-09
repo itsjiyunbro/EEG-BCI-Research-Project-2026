@@ -14,3 +14,7 @@ ipykernel>=6.29,<7.0
 # Reproducible code quality
 pytest>=8.3,<9.0
 ruff>=0.8,<1.0
+
+# Interactive MNE visualization
+mne-qt-browser>=0.7,<1.0
+PyQt6>=6.8,<7.0
