@@ -17,5 +17,10 @@ def download_eegbci_run() -> Path:
 
 def load_eegbci_raw(preload: bool = False):
     edf_path = download_eegbci_run()
+    raw = mne.io.read_raw_edf(edf_path, preload=preload)
 
-    return mne.io.read_raw_edf(edf_path, preload=preload)
+    eegbci.standardize(raw) # set channel names
+    montage = mne.channels.make_standard_montage("standard_1005")
+    raw.set_montage(montage)
+
+    return raw

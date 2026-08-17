@@ -79,9 +79,9 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 ## Next Step
 
-- Calculate and visualize the power spectral density (PSD) of the filtered EEG.
-- Identify delta, theta, alpha, and beta frequency bands.
-- Compare spectral characteristics across T0, T1, and T2 conditions.
+[ ] Calculate and visualize the power spectral density (PSD) of the filtered EEG.
+[ ] Identify delta, theta, alpha, and beta frequency bands.
+[ ] Compare spectral characteristics across T0, T1, and T2 conditions.
 
 ---
 
