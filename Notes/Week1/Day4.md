@@ -24,6 +24,7 @@
 **One-sentence definition**
 
 Power Spectral Density: 주파수별 신호 에너지의 분포
+
 PSD describes how signal power is distributed across frequencies
 
 **Why it matters for EEG/BCI research**
@@ -48,19 +49,19 @@ EEG 전극의 두피 위 위치 정보 지도
 
 ## Code
 
-### Key Code
+### Key Code 1
 
 ```python
 spectrum = raw.compute_psd(fmin = 1.0, fmax = 40.0)
 ```
 
-### Code Explanation
+#### Code Explanation
 
 - **Purpose:**  This code computes PSD
 - **Input:**  주파수 하한값, 상한값을 부여한다
 - **Output:**  1~40 Hz의 PSD 값을 보인다
 
-### Key Code
+### Key Code 2
 
 ```python
 bands = {
@@ -72,12 +73,12 @@ bands = {
 spectrum.plot_topomap(bands = bands, ch_type="eeg")
 ```
 
-### Code Explanation
+#### Code Explanation
 
 - **Purpose:**  Plot topomap, which shows the distribution of certain frequency band on the montage
 - **Input:**  Settle frequency bands as Theta, Alpha, Beta
 
-### Key Code
+### Key Code 3
 
 ```python
 spectrum.plot(
@@ -87,7 +88,7 @@ spectrum.plot(
 )
 ```
 
-### Code Explanation
+#### Code Explanation
 
 - **Purpose:**  Plot PSD graph only of C3, Cz, C4
 
@@ -118,21 +119,21 @@ we can observe that 12.5 Hz is stronger than its nearby.
 
 ### Result 3 — Spatial Distribution of PSD power of Theta, Alpha, Beta bands
 
-![montage](images/electrode_montage.jpg)
 ![PSD](images/day4_psd_topomap.png)
 
 **Observation**
 
 - This is the PSD energy distribution of 3 frequency bands: **Theta, Alpha, Beta**
+
 > Theta: 4-8 Hz
 > Alpha: 8-13 Hz
 > Beta: 13-30 Hz
 
 **Interpretation**
 
-- Black dot: Electrode locations
-- Color: PSD power of the region Interpolated PSD power across scalp locations
-- Contour lines: Lines of equal interpolated PSD power
+- **Black dot**: Electrode locations
+- **Color**: PSD power of the region Interpolated PSD power across scalp locations
+- **Contour lines**: Lines of equal interpolated PSD power
 
 ---
 
