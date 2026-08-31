@@ -39,7 +39,7 @@ for condition in event_id:
     print(f"{condition} epochs: ", len(epochs[condition]))
 
 
-###
+### Plot epochs of T1
 t1_epochs = epochs["T1"]
 
 print("T1 data shape: ", t1_epochs.get_data().shape)

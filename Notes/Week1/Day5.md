@@ -140,7 +140,7 @@ ica.plot_properties( # property w/ PSD
 
 **Explanation**
 
-- Find instantaneous amplitude changes exceeding 150 µV
+- Find instantaneous amplitude changes exceeding 150 
 
 **Observation**
 ![Global Transient Candidate](images/day5_amplitude_candidate_around_39.14s.png)

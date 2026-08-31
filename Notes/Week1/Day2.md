@@ -75,7 +75,6 @@ def download_eegbci_run() -> Path:
 
 - [ ] EEG Filtering
 - [ ] Seperate signal to noise
-- [ ] 
 
 ---
 

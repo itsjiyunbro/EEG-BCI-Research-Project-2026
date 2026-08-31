@@ -64,7 +64,7 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 ## Results
 
-### Result 1 — Original EEG vs Filtered EEG
+### Original EEG vs Filtered EEG
 
 ![original](images/day3_original.png)
 ![filtered](images/day3_filtered.png)
@@ -87,8 +87,9 @@ Designing a one-pass, zero-phase, non-causal bandpass filter:
 
 ## Summary
 
-- Applied Band Pass Filter
-- Compared Original EEG vs Filtered EEG
+- Frequencies below 1 Hz were reduced to suppress slow baseline drift
+- Frequencies above 40 Hz were reduced to attenuate high frequency noise, including possible muscle-related activity
+- The main EEG waveform patterns were preserved after applying the 1-40 band-pass filter
 
 ---
 
