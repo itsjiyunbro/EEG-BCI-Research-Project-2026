@@ -1,6 +1,6 @@
 # EEG & BCI Research Project - Summer 2026
 
-A four-week personal research project for learning EEG analysis and Brain-Computer Interface (BCI) development.
+A personal EEG and BCI research project documenting the path from EEG fundamentals to a real-time BCI demo.
 
 ## Long-Term Vision
 
